@@ -9,7 +9,8 @@ font-family: "Bai Jamjuree", sans-serif;
 
 .main-container
 {
-       height:auto;
+    overflow-x: hidden;
+    height:auto;
     width: auto;
     display:flex;
     flex-direction: column;
@@ -101,18 +102,6 @@ background-color: hsl(171, 66%, 44%);
 
 /*********************SECTION 2*****************/
 
-body
-{
-    min-height: 100vh;
-    width:100vw;
-    overflow-x: hidden;
-}
-
-.main-container
-{
-    width:100%;
-    height:100%;
-}
 
 
 .section-2{
@@ -278,6 +267,19 @@ justify-content: center;
 /****************************MEDIA QUERIES***************************************/
 @media screen and (max-width:600px)
 {
+#header-icon
+{
+    position: absolute;
+    text-align: center;
+    top:7%;
+    left:40%;
+    
+}
+.section-1 p
+{
+padding: 4%;
+}
+
     .section-1
     {
         width:100%;
@@ -289,42 +291,67 @@ justify-content: center;
     width: 70%;
 }
 .section1-part2{
-    margin-top:40%;
+    margin-top:60%;
+    padding:4%
 }
 .section-2
 {
+    width:100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
+left:0;
+margin-bottom: 5%;
+
 }
 #section2-img
 {
- width:95%;   
+    position: relative;
+    left:0;
+    text-align: center;
+    padding:8%;
+ width:90%;   
 }
 .section2-part1
 {
+    
     position: relative;
-    left:10%;
+    left:0;
     text-align: center;
 }
+.section2-part1 p
+{
+  padding:2px; 
+}
+
+
+
 .section-3
 {
     margin-top:10%;
     position: relative;
-    left:10%;
+    left:0;
 }
-.section3-part1
+.section3-part1 p
+
 {
+    padding: 4%;
      margin-top:3%;
 }
-.section3-part2
+.section3-part2 img
 {
+   width:100%;
     margin-top:4%;
 }
 .section-4
 {
+    position: relative;
+    justify-content: center;
     margin-top:60px;
+    width: 100%;
+    left:0;
     
 }
 .section4-part2 ul
@@ -349,8 +376,10 @@ align-items: center;
 }
 .section-5
 {
+    width:90%;
     position: relative;
-    left:7%;
+    left:0;
+    padding:4%;
 }
 .section5-part1 button
 {
